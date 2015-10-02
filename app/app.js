@@ -2,11 +2,28 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+	'ui.router',
+	'ui.bootstrap',
+	'myApp.version',
+	'myApp.home'
+])
+
+angular.module('myApp').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+	//Configuration of ui-router
+	$urlRouterProvider.when('', '/home');
+	$stateProvider
+		.state('home', {
+		    url:'/home',
+		    views: {
+		    	'content': {
+		    		templateUrl: 'partials/home.html',
+		    		controller: 'HomeCtrl',
+			    	controllerAs: 'homeCtrl'
+		    	}
+		    },
+		    access: {
+		    	authorizedProfiles: ['*'],
+		    	isPublic: true
+		    }
+		})
 }]);
