@@ -4,6 +4,7 @@
 angular.module('myApp', [
 	'ui.router',
 	'ui.bootstrap',
+	'pascalprecht.translate',
 	'myApp.version',
 	'myApp.home'
 ])

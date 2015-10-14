@@ -11,6 +11,7 @@
     "angular-mocks": "~1.4.0",
     "html5-boilerplate": "~5.2.0",
     "angular-bootstrap": "~0.13.0",
-    "angular-ui-router": "~0.2.0"
+    "angular-ui-router": "~0.2.0",
+    "angular-translate": "~2.8.0"
   }
 }
