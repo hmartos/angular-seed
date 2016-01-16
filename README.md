@@ -51,4 +51,4 @@ The simplest way to start this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app`.
+Now browse to the app at `http://localhost:8000/app`, it should redirect you to `http://localhost:8000/app/#/home`.
