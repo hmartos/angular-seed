@@ -51,14 +51,4 @@ The simplest way to start this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
-
-## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
-
-[git]: http://git-scm.com/
-[bower]: http://bower.io
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[http-server]: https://github.com/nodeapps/http-server
+Now browse to the app at `http://localhost:8000/app`.
