@@ -1,14 +1,13 @@
 # angular-seed — the seed for AngularJS apps
+# Project forked from angular-seed
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+projects. 
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
+This project is a fork of [angular-seed](https://github.com/angular/angular-seed) with modules [ui-router](http://angular-ui.github.io/ui-router/site/#/api/ui.router), [angular-bootstrap](http://angular-ui.github.io/bootstrap/) and [angular-translate](https://angular-translate.github.io/).
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+The seed contains a sample AngularJS application with a view and a controller.
 
 ## Getting Started
 
