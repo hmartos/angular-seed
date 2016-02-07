@@ -1,13 +1,15 @@
+/**
+ * Controller for home view
+ * @author hmartos
+ */
 (function () {
 	function homeCtrl() {
 
-		var name = "Héctor";
+		//Capture the this context of the Controller using vm, standing for viewModel
+		var vm = this;
 
-		//Exports, inyects this variables and function into the view	
-		angular.extend(this, {
-			name: name
-		});
+		vm.name = "Héctor";
 
 	}
-  angular.module('myApp.home', []).controller('HomeCtrl', [homeCtrl]);
+  angular.module('myApp').controller('HomeCtrl', [homeCtrl]);
 })();

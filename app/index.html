@@ -29,11 +29,13 @@
     <script src="js/version/version.js"></script>
     <script src="js/version/version-directive.js"></script>
     <script src="js/version/interpolate-filter.js"></script>
+    <script src="js/applicationCtrl.js"></script>
     <script src="js/homeCtrl.js"></script>
   </head>
 
-  <body>
+  <body ng-controller="ApplicationCtrl">
     <div>
+      <div ui-view="header"></div>
       <div ui-view="content"></div>
     </div>
 

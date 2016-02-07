@@ -5,8 +5,7 @@ angular.module('myApp', [
 	'ui.router',
 	'ui.bootstrap',
 	'pascalprecht.translate',
-	'myApp.version',
-	'myApp.home'
+	'myApp.version'
 ])
 
 angular.module('myApp').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -16,6 +15,11 @@ angular.module('myApp').config(['$stateProvider', '$urlRouterProvider', function
 		.state('home', {
 		    url:'/home',
 		    views: {
+				'header': {
+					templateUrl: 'partials/header.html',
+					controller: 'HomeCtrl',
+					controllerAs: 'homeCtrl'
+				},
 		    	'content': {
 		    		templateUrl: 'partials/home.html',
 		    		controller: 'HomeCtrl',

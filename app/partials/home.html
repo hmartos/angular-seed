@@ -1,4 +1,10 @@
 <div class="jumbotron">
+
+  <div class="form-group">
+    <label for="inputName">{{"enterYourName" | translate}}</label>
+    <input type="text" class="form-control" id="inputName" placeholder="{{'name' | translate}}" ng-model="homeCtrl.name">
+  </div>
+
   <h1>{{"welcome" | translate}}, {{homeCtrl.name}}!</h1>
   <p>{{"welcomeMsg" | translate}}</p>
 
