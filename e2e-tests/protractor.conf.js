@@ -23,7 +23,8 @@ exports.config = {
 
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000,
-        displayStacktrace: 'all'
+        displayStacktrace: 'all',
+        print: function() {}
     }
 
 };

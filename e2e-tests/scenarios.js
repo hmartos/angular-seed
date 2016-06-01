@@ -13,6 +13,29 @@ describe('my app', function() {
 
     describe('home', function() {
 
+        var translate;
+
+        beforeEach(function() {
+            browser.get('app/#/home');
+        });
+
+        /*beforeEach(inject(function(_$translate_) {
+         translate = _$translate_;
+         browser.get('app/#/home');
+         }));*/
+
+        /*
+         beforeEach(inject(['$translate', function ($translate) {
+         translate = $translate;
+         browser.get('app/#/home');
+         }]));
+         */
+
+        /*beforeEach(inject(function($translate) {
+         translate = $translate;
+         browser.get('app/#/home');
+         }));*/
+
         it('should render home when user navigates to home', function() {
             expect(element.all(by.id('forked')).first().getText()).toBe("Forked from angular/angular-seed");
         });
@@ -38,7 +61,7 @@ describe('my app', function() {
 
             var greeting = element(by.binding('homeCtrl.name'));
 
-            expect(greeting.getText()).toEqual('Welcome home, Héctor!');
+            expect(greeting.getText()).toEqual('Bienvenido a casa, Héctor!');
             //expect(element.all(by.id('welcome')).first().getText()).toMatch(/Bienvenido/)
 
         });
