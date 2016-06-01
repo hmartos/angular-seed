@@ -1,6 +1,8 @@
 # hmartos angular-seed — A seed for AngularJS apps
 # Project forked from angular-seed
 
+[![Build Status](https://travis-ci.org/hmartos/angular-seed.svg?branch=master)](https://travis-ci.org/hmartos/angular-seed)
+
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
 projects. 
