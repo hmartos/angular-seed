@@ -4,7 +4,9 @@
 
 describe('my app', function() {
 
-    //TODO inject $translate service to check texts
+    //TODO
+    //http://stackoverflow.com/questions/19818440/protractor-inject-is-not-defined-when-testing-angular-services
+    //http://stackoverflow.com/questions/22837242/how-to-inject-datefilter-in-protractor
 
     it('should automatically redirect to /home when location is /app', function() {
         browser.get('app');
@@ -13,28 +15,9 @@ describe('my app', function() {
 
     describe('home', function() {
 
-        var translate;
-
         beforeEach(function() {
             browser.get('app/#/home');
         });
-
-        /*beforeEach(inject(function(_$translate_) {
-         translate = _$translate_;
-         browser.get('app/#/home');
-         }));*/
-
-        /*
-         beforeEach(inject(['$translate', function ($translate) {
-         translate = $translate;
-         browser.get('app/#/home');
-         }]));
-         */
-
-        /*beforeEach(inject(function($translate) {
-         translate = $translate;
-         browser.get('app/#/home');
-         }));*/
 
         it('should render home when user navigates to home', function() {
             expect(element.all(by.id('forked')).first().getText()).toBe("Forked from angular/angular-seed");
