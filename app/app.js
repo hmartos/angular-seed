@@ -16,19 +16,13 @@ angular.module('myApp').config(['$stateProvider', '$urlRouterProvider', function
 		    url:'/home',
 		    views: {
 				'header': {
-					templateUrl: 'partials/header.html',
-					controller: 'HomeCtrl',
-					controllerAs: 'homeCtrl'
+					templateUrl: 'partials/header.html'
 				},
 		    	'content': {
 		    		templateUrl: 'partials/home.html',
 		    		controller: 'HomeCtrl',
 			    	controllerAs: 'homeCtrl'
 		    	}
-		    },
-		    access: {
-		    	authorizedProfiles: ['*'],
-		    	isPublic: true
 		    }
 		})
 }]);
